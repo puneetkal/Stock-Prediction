@@ -8,9 +8,10 @@ This project aims to predict NTT’s stock price using a Long Short-Term Memory 
 - [Data Overview](#data-overview)
 - [Model Selection](#model-selection)
 - [Evaluation Metrics](#evaluation-metrics)
-- [How to Run the Code](#how-to-run-the-code)
+- [Hypotheses](#hypotheses)
 - [Results](#results)
 - [Future Work](#future-work)
+- [How to Run the Code](#how-to-run-the-code)
 
 ## Project Objective
 **Main Objective**: Build a robust stock price prediction model.  
@@ -45,6 +46,22 @@ The model’s performance is evaluated using:
 ### Prerequisites
 Ensure Python 3.7+ and the required packages (listed in `requirements.txt`) are installed.
 
+## Hypotheses
+- **Hypothesis 1**: Increasing the dropout rate will reduce overfitting.
+- **Hypothesis 2**: Adding more LSTM layers will improve model performance.
+
+## Results
+![Goku](https://github.com/user-attachments/assets/dc5678ff-b04a-464e-924a-ea46b32da390)
+
+
+The model’s performance can be visualized by comparing the actual vs. predicted stock prices over the test period. The first 50 iterations of predictions are highlighted to demonstrate the model's accuracy.
+
+## Future Work
+- **Feature Expansion**: Consider adding external economic indicators (e.g., interest rates, inflation) for improved predictions.
+- **Hyperparameter Tuning**: Experiment with different batch sizes, epochs, and learning rates to optimize model performance.
+- **Integration with Live Data**: Implement real-time prediction using live stock data for practical trading applications.
+
+
 ### Instructions
 
 1. **Clone the Repository**:
@@ -73,13 +90,3 @@ Ensure Python 3.7+ and the required packages (listed in `requirements.txt`) are 
 
     This will preprocess the data, train the LSTM model, and generate predictions.
 
-## Results
-![Goku](https://github.com/user-attachments/assets/dc5678ff-b04a-464e-924a-ea46b32da390)
-
-
-The model’s performance can be visualized by comparing the actual vs. predicted stock prices over the test period. The first 50 iterations of predictions are highlighted to demonstrate the model's accuracy.
-
-## Future Work
-- **Feature Expansion**: Consider adding external economic indicators (e.g., interest rates, inflation) for improved predictions.
-- **Hyperparameter Tuning**: Experiment with different batch sizes, epochs, and learning rates to optimize model performance.
-- **Integration with Live Data**: Implement real-time prediction using live stock data for practical trading applications.
