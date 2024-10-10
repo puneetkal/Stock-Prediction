@@ -4,18 +4,18 @@
 In this project, we build a time series prediction model using NTT’s stock price data. The goal is to perform exploratory data analysis (EDA), preprocess the data, build a prediction model, and evaluate its accuracy for practical use in stock price forecasting.
 
 ## [Task Overview](#task-overview)
-This project covers the entire process of building a stock price prediction model:
-- **Duration**: 1 week
-- **Work Time**: 12 to 20 hours
-- **Key Tasks**:
-    - Understanding data and performing EDA
-    - Data preprocessing and feature engineering
-    - Model selection and training
-    - Model evaluation and analysis
-    - Model improvement and retraining
+In this task, we focus on creating a stock price prediction model using LSTM. The steps include:
+1. **EDA**: Understanding the data trends, detecting seasonality and anomalies.
+2. **Data Preprocessing**: Handling missing values, scaling, and creating relevant features.
+3. **Model Selection**: Choosing the LSTM model to capture long-term dependencies in the data.
+4. **Model Training**: Training the LSTM model with defined hyperparameters.
+5. **Model Evaluation**: Validating the model’s accuracy using relevant metrics.
 
 ## [Work Guidelines](#work-guidelines)
-### **Expected Timeline**:
+- **Duration**: 1 week
+- **Work Time**: 12 to 20 hours
+
+### Expected Timeline:
 - **2 hours**: Understanding the data and performing EDA.
 - **2 hours**: Data preprocessing and feature engineering.
 - **1 hour**: Model selection and training.
@@ -25,70 +25,58 @@ This project covers the entire process of building a stock price prediction mode
 
 ## [Task Content](#task-content)
 
-### **Understanding the Data and EDA**
-- **Overview**: Use NTT’s stock price data to analyze basic statistics, detect trends, and identify anomalies.
-- **Goal**: Understand data trends and extract challenges for the prediction model.
+### [1. Understanding the Data and EDA](#eda)
+**Overview**: Using NTT’s stock price data to check basic statistics, detect trends and seasonality in the time series, and identify anomalies.  
+**Goal**: Extract challenges for the prediction model.
 
-### **Data Preprocessing and Feature Engineering**
-- **Overview**: Preprocess the data (handling missing values, normalization, scaling) and create useful features for prediction.
-- **Goal**: Prepare the data to improve model accuracy.
+### [2. Data Preprocessing and Feature Engineering](#preprocessing)
+**Overview**: Handle missing values, normalize the data, and create new features (such as moving averages and RSI).  
+**Goal**: Prepare the dataset to improve the model's accuracy.
 
-### **Model Selection and Training**
-- **Overview**: Implement an appropriate model such as ARIMA or LSTM.
-- **Goal**: Build a model that maximizes stock price prediction accuracy.
-- **Note**: Be prepared to explain why this model was selected.
+### [3. Model Selection and Training](#model-selection)
+**Overview**: Select an appropriate model (e.g., LSTM) for time series prediction.  
+**Goal**: Build a model that maximizes prediction accuracy.
 
-### **Model Evaluation and Result Analysis**
-- **Overview**: Validate the model’s accuracy and calculate evaluation metrics.
-- **Goal**: Objectively evaluate the model and analyze its performance.
-- **Metrics Used**: Mean Squared Error (MSE) and R-squared (R²).
+### [4. Model Evaluation and Result Analysis](#evaluation)
+**Overview**: Validate the model using metrics such as Mean Squared Error (MSE) and R-squared (R²).  
+**Goal**: Objectively evaluate the effectiveness of the model.
 
-### **Considering Improvements and Retraining the Model**
-- **Overview**: Identify areas for improvement, update the model, and retrain it.
-- **Goal**: Enhance model accuracy by testing hypotheses and refining features.
+### [5. Considering Improvements and Retraining the Model](#improvements)
+**Overview**: Test hypotheses to improve the model’s accuracy, such as adding more LSTM layers or adjusting dropout rates.  
+**Goal**: Refine the model for better results.
 
-### **Summarizing Results and Preparing Presentation Materials**
-- **Overview**: Summarize the model-building process, results, and technical achievements in presentation format.
-- **Goal**: Develop clear communication skills for technical achievements.
+### [6. Summarizing Results and Presentation](#presentation)
+**Overview**: Prepare slides summarizing the model-building process, results, and validation of hypotheses.
 
-## [Deliverables](#deliverables)
+## [How to Run the Code](#run-the-code)
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/your-username/stock-price-prediction.git
+    cd stock-price-prediction
+    ```
 
-### **Implemented Program**
-- **Submission Method**: Create a GitHub repository and push the code.
-- **README**: Include instructions for execution and an overview of the program.
+2. **Install Dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-### **Presentation Slides**
-Suggested Structure:
-1. **Background**: Importance and challenges of stock price prediction.
-2. **Data Analysis Results**: EDA findings and extracted challenges.
-3. **Technical Overview**: Models used and feature engineering methods.
-4. **Evaluation Metrics**: Metrics for model evaluation and results.
-5. **Validation Content**: Hypotheses behind model improvements and results.
-    - **Hypothesis 1**: Increasing the dropout rate will reduce overfitting.
-    - **Hypothesis 2**: Adding more LSTM layers will improve model performance.
-6. **Conclusion**: Summary of results and future work prospects.
+3. **Run the Code**:
+    ```bash
+    python main.py
+    ```
 
-## [Evaluation Criteria](#evaluation-criteria)
+## [Evaluation Metrics](#evaluation-metrics)
+- **Mean Squared Error (MSE)**: Measures the average squared difference between the actual and predicted stock prices.
+- **R-squared (R²)**: Explains how well the actual stock price variance is captured by the model.
 
-### **Technical Perspective**
-- Is the data preprocessed appropriately?
-- Is there a valid reason for the selected model?
-- Are evaluation metrics well-designed and appropriate?
-- Are hypotheses derived and validated effectively?
-- Is the code well-structured and readable?
+## [Hypotheses and Results](#hypotheses)
+- **Hypothesis 1**: Increasing the dropout rate will reduce overfitting.
+- **Hypothesis 2**: Adding more LSTM layers will improve model performance.
 
-### **Business Perspective**
-- Can technical content be explained clearly to non-technical clients?
-- Is the storyline in the presentation consistent and logical?
-- Are the slides well-structured (clear titles, bodies, and messages)?
-- Is the explanation during the presentation clear and concise?
-- Can the results be delivered within the specified time frame?
+## [Limitations](#limitations)
+1. **Overfitting**: The model might perform well on training data but struggle on unseen data due to overfitting.
+2. **Lack of External Features**: Incorporating economic factors or market sentiment could further improve prediction accuracy.
 
-## [Supplementary Materials](#supplementary-materials)
-Here are some useful references for writing slides and improving presentation skills:
-- [Basics of Slide Writing](https://note.com/powerpoint_jp/n/n812a673ce2ab)
-- [Techniques for Slide Creation](https://note.com/powerpoint_jp/n/n9a8fd26ee181)
-- [Lecture on Slide Writing (Slideshare)](https://www.slideshare.net/slideshow/lecture-on-slide-writing/103255387)
-
----
-
+## [Future Work](#future-work)
+- Explore hyperparameter tuning for better performance.
+- Integrate live stock data for real-time predictions.
