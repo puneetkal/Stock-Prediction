@@ -17,10 +17,14 @@ This project aims to predict NTT’s stock price using a Long Short-Term Memory 
 **Focus**: Using LSTM, the model captures long-term dependencies in stock price movements and evaluates its performance using relevant metrics.
 
 ## Data Overview
-The dataset includes NTT’s historical stock price data. Key features include:
-- **Closing Price**: Target variable for prediction.
-- **Moving Average (MA50)**: 50-day moving average to capture trends.
-- **Relative Strength Index (RSI)**: Momentum indicator for evaluating stock price performance.
+-**Date:** The date of the stock data.<br>
+-**Closing Price:** The price of the stock at market close.<br>
+-**Opening Price:** The price of the stock at market open.<br>
+-**High Price:** The highest price during the trading session.<br>
+-**Low Price:** The lowest price during the trading session.<br>
+-**Volume:** The number of shares traded.<br>
+-**Percentage Change:** The percentage change in price compared to the previous 
+trading day.
 
 ## Model Selection
 - **LSTM**: A Recurrent Neural Network (RNN) that is suited for handling sequential time-series data and capturing long-term dependencies.
