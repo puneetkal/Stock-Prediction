@@ -74,7 +74,8 @@ Ensure Python 3.7+ and the required packages (listed in `requirements.txt`) are 
     This will preprocess the data, train the LSTM model, and generate predictions.
 
 ## Results
-[Add a plot or image of the results here]
+![Goku](https://github.com/user-attachments/assets/dc5678ff-b04a-464e-924a-ea46b32da390)
+
 
 The model’s performance can be visualized by comparing the actual vs. predicted stock prices over the test period. The first 50 iterations of predictions are highlighted to demonstrate the model's accuracy.
 
