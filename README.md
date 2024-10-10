@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Price Prediction README</title>
-</head>
 <body>
     <h1>Stock Price Prediction using LSTM</h1>
 
@@ -64,4 +57,3 @@
     <h2>Repository</h2>
     <p>The code for the model is available in the <code>main.py</code> file, with necessary dependencies listed in <code>requirements.txt</code>. To run the model, follow the instructions in this repository.</p>
 </body>
-</html>
