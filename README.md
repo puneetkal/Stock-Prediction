@@ -1,65 +1,94 @@
-# Stock Price Prediction using LSTM
+# Stock Price Prediction Model using LSTM
 
-## Introduction
-This project aims to predict stock prices using a Long Short-Term Memory (LSTM) model based on historical data from NTT’s stock. Stock price prediction plays a crucial role in guiding investment strategies and managing financial risks.
+## [Introduction](#introduction)
+In this project, we build a time series prediction model using NTT’s stock price data. The goal is to perform exploratory data analysis (EDA), preprocess the data, build a prediction model, and evaluate its accuracy for practical use in stock price forecasting.
 
-## Importance
-- **Guides investment strategies**: Helps investors make informed decisions.
-- **Aids in risk management**: Allows for better understanding of market trends.
+## [Task Overview](#task-overview)
+This project covers the entire process of building a stock price prediction model:
+- **Duration**: 1 week
+- **Work Time**: 12 to 20 hours
+- **Key Tasks**:
+    - Understanding data and performing EDA
+    - Data preprocessing and feature engineering
+    - Model selection and training
+    - Model evaluation and analysis
+    - Model improvement and retraining
 
-## Challenges
-- **High volatility**: Stock prices can change rapidly, making predictions difficult.
-- **Complex market trends**: Markets are influenced by numerous factors, complicating the prediction process.
+## [Work Guidelines](#work-guidelines)
+### **Expected Timeline**:
+- **2 hours**: Understanding the data and performing EDA.
+- **2 hours**: Data preprocessing and feature engineering.
+- **1 hour**: Model selection and training.
+- **1 hour**: Model evaluation and result analysis.
+- **4 to 8 hours**: Considering improvements and retraining the model.
+- **2 to 6 hours**: Summarizing results and preparing presentation materials.
 
-## Objective
-The objective of this project is to build an LSTM model for NTT’s stock data and validate its accuracy for practical usage.
+## [Task Content](#task-content)
 
-## Model Selection
+### **Understanding the Data and EDA**
+- **Overview**: Use NTT’s stock price data to analyze basic statistics, detect trends, and identify anomalies.
+- **Goal**: Understand data trends and extract challenges for the prediction model.
 
-### Overview of Time Series Models
-We explored various models, but the LSTM, an advanced Recurrent Neural Network (RNN), was chosen due to its ability to capture long-term dependencies in time series data.
+### **Data Preprocessing and Feature Engineering**
+- **Overview**: Preprocess the data (handling missing values, normalization, scaling) and create useful features for prediction.
+- **Goal**: Prepare the data to improve model accuracy.
 
-### Why LSTM?
-LSTM excels in time series forecasting because it can remember patterns over long sequences, unlike traditional RNNs, which suffer from vanishing gradient problems.
+### **Model Selection and Training**
+- **Overview**: Implement an appropriate model such as ARIMA or LSTM.
+- **Goal**: Build a model that maximizes stock price prediction accuracy.
+- **Note**: Be prepared to explain why this model was selected.
 
-## Model Training
-- **Epochs**: 50
-- **Batch Size**: 30
+### **Model Evaluation and Result Analysis**
+- **Overview**: Validate the model’s accuracy and calculate evaluation metrics.
+- **Goal**: Objectively evaluate the model and analyze its performance.
+- **Metrics Used**: Mean Squared Error (MSE) and R-squared (R²).
 
-## Evaluation Metrics
-- **Mean Squared Error (MSE)**: Measures the average squared difference between actual and predicted values.
-- **R-squared (R²)**: Indicates the proportion of variance in the target that the model explains.
+### **Considering Improvements and Retraining the Model**
+- **Overview**: Identify areas for improvement, update the model, and retrain it.
+- **Goal**: Enhance model accuracy by testing hypotheses and refining features.
 
-## Result Analysis
-*(Image Placeholder)*
+### **Summarizing Results and Preparing Presentation Materials**
+- **Overview**: Summarize the model-building process, results, and technical achievements in presentation format.
+- **Goal**: Develop clear communication skills for technical achievements.
 
-## Hypotheses
+## [Deliverables](#deliverables)
 
-### Hypothesis 1:
-Increasing the dropout rate will reduce overfitting, improving the model's ability to generalize to unseen data.
+### **Implemented Program**
+- **Submission Method**: Create a GitHub repository and push the code.
+- **README**: Include instructions for execution and an overview of the program.
 
-### Hypothesis 2:
-Adding more LSTM layers will improve model performance by capturing more complex patterns in the stock data.
+### **Presentation Slides**
+Suggested Structure:
+1. **Background**: Importance and challenges of stock price prediction.
+2. **Data Analysis Results**: EDA findings and extracted challenges.
+3. **Technical Overview**: Models used and feature engineering methods.
+4. **Evaluation Metrics**: Metrics for model evaluation and results.
+5. **Validation Content**: Hypotheses behind model improvements and results.
+    - **Hypothesis 1**: Increasing the dropout rate will reduce overfitting.
+    - **Hypothesis 2**: Adding more LSTM layers will improve model performance.
+6. **Conclusion**: Summary of results and future work prospects.
 
-## Limitations of the Current Model
-- **Overfitting**: The model may perform well on training data but struggle with unseen data due to overfitting.
-- **Lack of External Features**: The model only uses historical stock prices, without considering external factors like market news or economic indicators.
+## [Evaluation Criteria](#evaluation-criteria)
 
-## Repository
-The code for the model is available in the `main.py` file, with necessary dependencies listed in `requirements.txt`. To run the model, follow the instructions below:
+### **Technical Perspective**
+- Is the data preprocessed appropriately?
+- Is there a valid reason for the selected model?
+- Are evaluation metrics well-designed and appropriate?
+- Are hypotheses derived and validated effectively?
+- Is the code well-structured and readable?
 
-### How to Run
-1. Clone the repository: 
-    ```bash
-    git clone https://github.com/yourusername/stock-price-prediction.git
-    ```
-2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. Run the model:
-    ```bash
-    python main.py
-    ```
+### **Business Perspective**
+- Can technical content be explained clearly to non-technical clients?
+- Is the storyline in the presentation consistent and logical?
+- Are the slides well-structured (clear titles, bodies, and messages)?
+- Is the explanation during the presentation clear and concise?
+- Can the results be delivered within the specified time frame?
+
+## [Supplementary Materials](#supplementary-materials)
+Here are some useful references for writing slides and improving presentation skills:
+- [Basics of Slide Writing](https://note.com/powerpoint_jp/n/n812a673ce2ab)
+- [Techniques for Slide Creation](https://note.com/powerpoint_jp/n/n9a8fd26ee181)
+- [Lecture on Slide Writing (Slideshare)](https://www.slideshare.net/slideshow/lecture-on-slide-writing/103255387)
 
 ---
+
