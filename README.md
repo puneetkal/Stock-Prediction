@@ -1,59 +1,65 @@
-<body>
-    <h1>Stock Price Prediction using LSTM</h1>
+# Stock Price Prediction using LSTM
 
-    <h2>Introduction</h2>
-    <p>This project aims to predict stock prices using a Long Short-Term Memory (LSTM) model based on historical data from NTT’s stock. Stock price prediction plays a crucial role in guiding investment strategies and managing financial risks.</p>
+## Introduction
+This project aims to predict stock prices using a Long Short-Term Memory (LSTM) model based on historical data from NTT’s stock. Stock price prediction plays a crucial role in guiding investment strategies and managing financial risks.
 
-    <h2>Importance</h2>
-    <ul>
-        <li><strong>Guides investment strategies</strong>: Helps investors make informed decisions.</li>
-        <li><strong>Aids in risk management</strong>: Allows for better understanding of market trends.</li>
-    </ul>
+## Importance
+- **Guides investment strategies**: Helps investors make informed decisions.
+- **Aids in risk management**: Allows for better understanding of market trends.
 
-    <h2>Challenges</h2>
-    <ul>
-        <li><strong>High volatility</strong>: Stock prices can change rapidly, making predictions difficult.</li>
-        <li><strong>Complex market trends</strong>: Markets are influenced by numerous factors, complicating the prediction process.</li>
-    </ul>
+## Challenges
+- **High volatility**: Stock prices can change rapidly, making predictions difficult.
+- **Complex market trends**: Markets are influenced by numerous factors, complicating the prediction process.
 
-    <h2>Objective</h2>
-    <p>To build an LSTM model for NTT’s stock data and validate its accuracy for practical usage.</p>
+## Objective
+The objective of this project is to build an LSTM model for NTT’s stock data and validate its accuracy for practical usage.
 
-    <h2>Model Selection</h2>
-    <h3>Overview of Time Series Models</h3>
-    <p>We explored various models, but the LSTM, an advanced Recurrent Neural Network (RNN), was chosen due to its ability to capture long-term dependencies in time series data.</p>
+## Model Selection
 
-    <h3>Why LSTM?</h3>
-    <p>LSTM excels in time series forecasting because it can remember patterns over long sequences, unlike traditional RNNs, which suffer from vanishing gradient problems.</p>
+### Overview of Time Series Models
+We explored various models, but the LSTM, an advanced Recurrent Neural Network (RNN), was chosen due to its ability to capture long-term dependencies in time series data.
 
-    <h2>Model Training</h2>
-    <ul>
-        <li><strong>Epochs</strong>: 50</li>
-        <li><strong>Batch Size</strong>: 30</li>
-    </ul>
+### Why LSTM?
+LSTM excels in time series forecasting because it can remember patterns over long sequences, unlike traditional RNNs, which suffer from vanishing gradient problems.
 
-    <h2>Evaluation Metrics</h2>
-    <ul>
-        <li><strong>Mean Squared Error (MSE)</strong>: Measures the average squared difference between actual and predicted values.</li>
-        <li><strong>R-squared (R²)</strong>: Indicates the proportion of variance in the target that the model explains.</li>
-    </ul>
+## Model Training
+- **Epochs**: 50
+- **Batch Size**: 30
 
-    <h2>Result Analysis</h2>
-    <p><em>(Image Placeholder)</em></p>
+## Evaluation Metrics
+- **Mean Squared Error (MSE)**: Measures the average squared difference between actual and predicted values.
+- **R-squared (R²)**: Indicates the proportion of variance in the target that the model explains.
 
-    <h2>Hypotheses</h2>
-    <h3>Hypothesis 1</h3>
-    <p>Increasing the dropout rate will reduce overfitting, improving the model's ability to generalize to unseen data.</p>
+## Result Analysis
+*(Image Placeholder)*
 
-    <h3>Hypothesis 2</h3>
-    <p>Adding more LSTM layers will improve model performance by capturing more complex patterns in the stock data.</p>
+## Hypotheses
 
-    <h2>Limitations of the Current Model</h2>
-    <ul>
-        <li><strong>Overfitting</strong>: The model may perform well on training data but struggle with unseen data due to overfitting.</li>
-        <li><strong>Lack of External Features</strong>: The model only uses historical stock prices, without considering external factors like market news or economic indicators.</li>
-    </ul>
+### Hypothesis 1:
+Increasing the dropout rate will reduce overfitting, improving the model's ability to generalize to unseen data.
 
-    <h2>Repository</h2>
-    <p>The code for the model is available in the <code>main.py</code> file, with necessary dependencies listed in <code>requirements.txt</code>. To run the model, follow the instructions in this repository.</p>
-</body>
+### Hypothesis 2:
+Adding more LSTM layers will improve model performance by capturing more complex patterns in the stock data.
+
+## Limitations of the Current Model
+- **Overfitting**: The model may perform well on training data but struggle with unseen data due to overfitting.
+- **Lack of External Features**: The model only uses historical stock prices, without considering external factors like market news or economic indicators.
+
+## Repository
+The code for the model is available in the `main.py` file, with necessary dependencies listed in `requirements.txt`. To run the model, follow the instructions below:
+
+### How to Run
+1. Clone the repository: 
+    ```bash
+    git clone https://github.com/yourusername/stock-price-prediction.git
+    ```
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3. Run the model:
+    ```bash
+    python main.py
+    ```
+
+---
